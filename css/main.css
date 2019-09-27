@@ -1,0 +1,123 @@
+/* Declaring variables */
+:root {
+  --primary_color: #1a3561;
+  --secondary_color: #fcb515;
+  --input_color: #ebebeb;
+  --default_padding: 0 93px;
+  --font: "Roboto", sans-serif;
+  --shadow: drop-shadow(0px 2px 5px rgba(107, 107, 107, 0.3));
+}
+/* Headings */
+h1 {
+  font-size: 34px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 25px;
+}
+h5 {
+  font-size: 22px;
+}
+h6 {
+  font-size: 18px;
+}
+/* Inputs */
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+select {
+  height: 30.7px;
+  width: 235px;
+  padding: 0 10px 0 10px;
+  display: block;
+  background: #ebebeb;
+  border: 1px solid #ebebeb;
+  margin-top: 9px;
+  outline: none;
+  margin-bottom: 18px;
+  transition: 0.4s ease;
+  font-family: var(--font);
+}
+label {
+  margin-bottom: 18px;
+  height: 30.7px;
+  display: block;
+  margin-top: 9px;
+  cursor: pointer;
+  width: fit-content;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+select:focus {
+  border: 1px solid rgb(177, 177, 177);
+}
+button {
+  padding: 5px 10px;
+  height: 45px;
+  width: 100%;
+  background: var(--primary_color);
+  color: var(--secondary_color);
+  font-family: var(--font);
+  font-size: 17px;
+  font-weight: bold;
+  border: 2px solid var(--primary_color);
+  letter-spacing: 0.34px;
+  transition: 0.4s ease;
+}
+button:hover {
+  cursor: pointer;
+  border: 2px solid var(--secondary_color);
+  transition: 0.4s ease;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]+label:before {
+  content: "";
+  background: #e1e1e1;
+  border: 3px solid #e1e1e1;
+  padding: 1px 1px;
+  width: 6px;
+  display: inline-block;
+  height: 6px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked+label:before {
+  background: #fcb515;
+  border: 3px solid #1a3561;
+  align-content: center;
+}
+.active {
+  color: #fcb515;
+}

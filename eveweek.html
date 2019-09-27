@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evening | Weekend MBA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 339px;
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 34px;
+            font-family: "Roboto Condensed";
+            letter-spacing: -0.34px;
+        }
+
+        .wrapper {
+            padding: 0 7rem;
+        }
+
+        .head-container {
+            width: 100%;
+        }
+
+
+        .text1 {
+            width: 75px;
+        }
+
+        .text2 {
+            width: 332px;
+        }
+
+        .head-container {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-areas:
+                "hero-text form_layout"
+                "why_us form_layout";
+        }
+
+        .hero-text {
+            grid-area: hero-text;
+            display: flex;
+            height: 186px;
+            justify-content: space-between;
+            width: 415px;
+            margin: 20px 0 0 217px;
+        }
+
+        .form_layout {
+            grid-area: form_layout;
+            width: 299px;
+            height: 659px;
+            background: white;
+        }
+
+        .why_us {
+            grid-area: why_us;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img/hero.png" alt="berkelyhaas">
+    <div class="wrapper">
+        <div class="head-container">
+            <div class="hero-text">
+                <div class="text1">
+                    <h1>Same</h1>
+                </div>
+                <div class="text2">
+                    <h1>world-renowned faculty.</h1>
+                    <h1>global alumni network.</h1>
+                    <h1>top-ranked MBA.</h1>
+                    <h1><span>Different</span> schedules.</h1>
+                </div>
+            </div>
+            <div class="form_layout">
+                <p>Form</p>
+            </div>
+            <div class="why_us">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusamus harum et temporibus
+                quisquam sint veniam perferendis ab quasi quia?
+            </div>
+        </div>
+    </div>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap" rel="stylesheet" />
+</body>
+
+</html>

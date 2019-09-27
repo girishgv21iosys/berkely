@@ -5,6 +5,10 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color:transparent;
+  -moz-tap-highlight-color:transparent;
+  -o-tap-highlight-color:transparent;
 }
 body {
   font-family: var(--font);
